@@ -1,12 +1,12 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Coffee, Flower, Leaf, MessageSquare } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Coffee, Flower, Leaf, MessageSquare } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import ProductCard from "@/components/product-card"
-import ImpactCard from "@/components/impact-card"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import ProductCard from "@/components/product-card";
+import ImpactCard from "@/components/impact-card";
 
 export default function Home() {
   return (
@@ -19,19 +19,34 @@ export default function Home() {
             <span className="text-lg font-bold">Mujeres de Dipilto</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="#inicio" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#inicio"
+              className="text-sm font-medium hover:text-primary"
+            >
               Inicio
             </Link>
-            <Link href="#nosotros" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#nosotros"
+              className="text-sm font-medium hover:text-primary"
+            >
               Sobre Nosotros
             </Link>
-            <Link href="#productos" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#productos"
+              className="text-sm font-medium hover:text-primary"
+            >
               Productos
             </Link>
-            <Link href="#impacto" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#impacto"
+              className="text-sm font-medium hover:text-primary"
+            >
               Impacto
             </Link>
-            <Link href="#contacto" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#contacto"
+              className="text-sm font-medium hover:text-primary"
+            >
               Contacto
             </Link>
           </nav>
@@ -71,7 +86,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60" />
           <div className="container relative z-10 flex flex-col items-center text-center">
             <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              Impulsando la agroecología y el empoderamiento femenino para un futuro sostenible
+              Impulsando la agroecología y el empoderamiento femenino para un
+              futuro sostenible
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/90">
               Cooperativa Multisectorial Mujeres Trabajadoras de Dipilto R.L
@@ -87,7 +103,9 @@ export default function Home() {
         <section id="nosotros" className="py-16 md:py-24 bg-muted/50">
           <div className="container">
             <div className="flex flex-col items-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Sobre Nosotros</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                Sobre Nosotros
+              </h2>
               <div className="mt-4 h-1 w-20 bg-primary rounded"></div>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -97,8 +115,9 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Misión</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Producir y comercializar productos orgánicos de alta calidad, promoviendo la agroecología y el
-                  empoderamiento de las mujeres en nuestra comunidad.
+                  Producir y comercializar productos orgánicos de alta calidad,
+                  promoviendo la agroecología y el empoderamiento de las mujeres
+                  en nuestra comunidad.
                 </p>
               </div>
               <div className="flex flex-col items-center rounded-lg border bg-card p-6 text-center shadow-sm">
@@ -107,8 +126,9 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Visión</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Ser una cooperativa líder en la producción sostenible, reconocida por nuestro compromiso con la
-                  biodiversidad y la economía social y solidaria.
+                  Ser una cooperativa líder en la producción sostenible,
+                  reconocida por nuestro compromiso con la biodiversidad y la
+                  economía social y solidaria.
                 </p>
               </div>
               <div className="flex flex-col items-center rounded-lg border bg-card p-6 text-center shadow-sm lg:col-span-1 md:col-span-2">
@@ -117,7 +137,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Valores</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Sostenibilidad, cooperación, equidad, transparencia y compromiso con la comunidad y el medio ambiente.
+                  Sostenibilidad, cooperación, equidad, transparencia y
+                  compromiso con la comunidad y el medio ambiente.
                 </p>
               </div>
             </div>
@@ -137,9 +158,12 @@ export default function Home() {
         <section id="productos" className="py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Nuestros Productos</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                Nuestros Productos
+              </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
-                Productos orgánicos cultivados con amor y respeto por la naturaleza
+                Productos orgánicos cultivados con amor y respeto por la
+                naturaleza
               </p>
               <div className="mt-4 h-1 w-20 bg-primary rounded"></div>
             </div>
@@ -180,7 +204,9 @@ export default function Home() {
         <section id="impacto" className="py-16 md:py-24 bg-muted/50">
           <div className="container">
             <div className="flex flex-col items-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Impacto y Sostenibilidad</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                Impacto y Sostenibilidad
+              </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
                 Transformando vidas y protegiendo nuestro entorno
               </p>
@@ -220,9 +246,12 @@ export default function Home() {
             </div>
             <div className="mt-12 bg-card rounded-lg p-6 shadow-sm border">
               <blockquote className="italic text-lg text-center">
-                "Formar parte de la cooperativa ha transformado mi vida. Ahora puedo mantener a mi familia con dignidad
-                mientras cuido de nuestra tierra."
-                <footer className="mt-2 font-medium not-italic">— María Jiménez, Socia desde 2015</footer>
+                "Formar parte de la cooperativa ha transformado mi vida. Ahora
+                puedo mantener a mi familia con dignidad mientras cuido de
+                nuestra tierra."
+                <footer className="mt-2 font-medium not-italic">
+                  — María Jiménez, Socia desde 2015
+                </footer>
               </blockquote>
             </div>
           </div>
@@ -232,7 +261,9 @@ export default function Home() {
         <section id="contacto" className="py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Contáctanos</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                Contáctanos
+              </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
                 Estamos aquí para responder tus preguntas y atender tus pedidos
               </p>
@@ -267,7 +298,11 @@ export default function Home() {
                     >
                       Mensaje
                     </label>
-                    <Textarea id="message" placeholder="¿En qué podemos ayudarte?" className="min-h-32" />
+                    <Textarea
+                      id="message"
+                      placeholder="¿En qué podemos ayudarte?"
+                      className="min-h-32"
+                    />
                   </div>
                   <Button className="w-full">
                     Enviar mensaje
@@ -277,7 +312,9 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold mb-4">Información de contacto</h3>
+                  <h3 className="text-xl font-bold mb-4">
+                    Información de contacto
+                  </h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <svg
@@ -317,7 +354,9 @@ export default function Home() {
                       </svg>
                       <div>
                         <p className="font-medium">Correo electrónico</p>
-                        <p className="text-muted-foreground">info@mujeresdedipilto.org</p>
+                        <p className="text-muted-foreground">
+                          info@mujeresdedipilto.org
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -338,7 +377,9 @@ export default function Home() {
                       </svg>
                       <div>
                         <p className="font-medium">Dirección</p>
-                        <p className="text-muted-foreground">Comunidad El Dipilto, Nueva Segovia, Nicaragua</p>
+                        <p className="text-muted-foreground">
+                          Comunidad El Dipilto, Nueva Segovia, Nicaragua
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -346,7 +387,10 @@ export default function Home() {
                 <div className="mt-8">
                   <h3 className="text-xl font-bold mb-4">Síguenos</h3>
                   <div className="flex space-x-4">
-                    <Link href="#" className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary">
+                    <Link
+                      href="#"
+                      className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -363,7 +407,10 @@ export default function Home() {
                       </svg>
                       <span className="sr-only">Facebook</span>
                     </Link>
-                    <Link href="#" className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary">
+                    <Link
+                      href="#"
+                      className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -376,13 +423,23 @@ export default function Home() {
                         strokeLinejoin="round"
                         className="h-5 w-5"
                       >
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <rect
+                          width="20"
+                          height="20"
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                        />
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                       </svg>
                       <span className="sr-only">Instagram</span>
                     </Link>
-                    <Link href="#" className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary">
+                    <Link
+                      href="#"
+                      className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -399,7 +456,10 @@ export default function Home() {
                       </svg>
                       <span className="sr-only">Twitter</span>
                     </Link>
-                    <Link href="#" className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary">
+                    <Link
+                      href="#"
+                      className="rounded-full bg-muted p-2 text-muted-foreground hover:text-primary"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -436,35 +496,51 @@ export default function Home() {
                 <span className="text-lg font-bold">Mujeres de Dipilto</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Cooperativa Multisectorial Mujeres Trabajadoras de Dipilto R.L, comprometidas con la producción orgánica
-                y el desarrollo sostenible.
+                Cooperativa Multisectorial Mujeres Trabajadoras de Dipilto R.L,
+                comprometidas con la producción orgánica y el desarrollo
+                sostenible.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Enlaces rápidos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#inicio" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#inicio"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link href="#nosotros" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#nosotros"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Sobre Nosotros
                   </Link>
                 </li>
                 <li>
-                  <Link href="#productos" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#productos"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Productos
                   </Link>
                 </li>
                 <li>
-                  <Link href="#impacto" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#impacto"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Impacto
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contacto" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#contacto"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Contacto
                   </Link>
                 </li>
@@ -474,31 +550,46 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">Productos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Café Orgánico
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Miel de Abejas
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Viveros
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+                  <Link
+                    href="#"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
                     Musáceas
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Boletín informativo</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                Boletín informativo
+              </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Suscríbete para recibir noticias sobre nuestros productos y eventos.
+                Suscríbete para recibir noticias sobre nuestros productos y
+                eventos.
               </p>
               <form className="space-y-2">
                 <Input placeholder="Tu correo electrónico" />
@@ -508,19 +599,19 @@ export default function Home() {
           </div>
           <div className="mt-8 border-t pt-8 text-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Cooperativa Multisectorial Mujeres Trabajadoras de Dipilto R.L. Todos los
-              derechos reservados.
+              © {new Date().getFullYear()} Cooperativa Multisectorial Mujeres
+              Trabajadoras de Dipilto R.L. Todos los derechos reservados.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 /**
  * 
  * gegdjh npm install date-fns@^2.28.0
 npm install --legacy-peer-deps
-solo instale esas y funcion jajaja
+solo instale esas y funcion jajaja (esta es la buena)
  */
